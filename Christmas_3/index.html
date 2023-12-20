@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <style>
+      body {
+  background-color:rgba(136, 67, 67, 0.896);
+  #f{
+    -webkit-appearance: textfield;
+    background-color: white;
+    border: 2px inset;
+    color: black;
+}
+}
+    </style>
+</head>
+
+  
+    <p>🥯 🎄Christmas Recipe Converter 🧑‍🍳</p>
+      
+<body>
+
+  <h1>Choose what you need to convert!</h1>
+  <p>Take the options what to convert first:</p>
+  <input id="c" name="c" onkeyup="preveri()" onkeydown="validate(event)"> <!-- New function to make sure user enters a number -->
+  <select id="chose1" >
+  <option></option>
+  <option value="C">Cups</option>
+  <option value="T">Teaspoons</option>
+  <option value="table">Tablespoons</option>
+  </select><br />
+  equals<br />
+  <input id="f" name="f" disabled>
+  <select id="chose2">
+  <option></option>
+  </select> 
+  <div id="txt"></div>
+  <div id="txt"></div>
+<div id="txt"></div>
+<script src="/script.js"></script>
+</body>
+
+</html>

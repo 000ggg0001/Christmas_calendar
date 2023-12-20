@@ -1,0 +1,146 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width,  
+                   initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissor</title> 
+    <style>
+      *{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+    background: #162a4c; 
+    color: #fff; 
+} 
+
+.game{ 
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
+    width: 100vw; 
+    justify-content: center; 
+    align-items: center; 
+} 
+  
+
+.title{ 
+    position: absolute; 
+    top: 0; 
+    font-size: 2rem; 
+    z-index: 2; 
+} 
+  
+
+.score{ 
+    display: flex; 
+    width: 30vw; 
+    justify-content: space-evenly; 
+    position: absolute; 
+    top: 70px; 
+    z-index: 1; 
+} 
+  
+
+.p-count,.c-count{ 
+    text-align: center; 
+    font-size: 1.5rem; 
+    margin-top: 1rem; 
+} 
+  
+
+.options{ 
+    display: flex; 
+    width: 50vw; 
+    justify-content: space-evenly; 
+    margin-top: 2rem; 
+} 
+  
+
+.snow_globe, .gift_wrap, .santas_sleigh{ 
+    padding: 0.8rem; 
+    width: 100px; 
+    border-radius: 10px; 
+    background: rgb(6, 92, 240); 
+    outline: none; 
+    border-color: rgb(22, 49, 168); 
+    border: none; 
+    cursor: pointer; 
+} 
+  
+.move{ 
+    font-size: 2rem; 
+    font-weight: bold; 
+} 
+  
+
+.reload { 
+    display: none; 
+    margin-top: 2rem; 
+    padding: 1rem; 
+    background: rgb(24, 54, 151); 
+    outline: none; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+} 
+  
+.result{ 
+    margin-top: 20px; 
+    font-size: 1.2rem; 
+} 
+
+    </style>
+</head> 
+<body> 
+    <section class="game"> 
+       
+        <div class="title">Rock 🪨, Paper 📄, Scissors ✂️</div> 
+        <div class="title">Santa’s Sleigh 🛷, Gift Wrap 🎀 and Snow Globe 🔮</div>
+          
+          
+        <div class="score">   
+            <div class="playerScore"> 
+                <h2>Player</h2> 
+                <p class="p-count count">0</p> 
+  
+            </div>        
+            <div class="computerScore"> 
+                <h2>Computer</h2> 
+                <p class="c-count count">0</p> 
+  
+            </div> 
+        </div> 
+        
+        <div class="move">Choose your weapon</div> 
+          
+          
+        <div class="movesleft">Moves Left: 10 </div> 
+          
+          
+        <div class="options"> 
+            <button class="snow_globe">snow_globe</button> 
+            <button class="gift_wrap">gift_wrap</button> 
+            <button class="santas_sleigh">santas_sleigh</button>     
+        </div> 
+          
+         
+        <div class="result"></div> 
+          
+          
+        <button class="reload"></button> 
+  
+    </section> 
+  
+    <script src="app.js"></script> 
+</body> 
+</html>
+
+
+
+
+
