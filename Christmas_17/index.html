@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-size: 20px;
+      font-family: sans-serif;
+      color: #722424;
+      text-align: center;
+      background-image: url(/nice.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+    .button {
+      background-color: blanchedalmond;
+      border-radius: 25px;
+      font-size: 25px;
+      padding: 15px;
+      color: #722424;
+      font-weight: bold;
+      margin: 25px;
+
+    }
+    h1{
+      color: antiquewhite;
+      margin-top: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <br><br><br><br><br><br><br><br>
+  <h1 style="font-weight: 500; ">🎇 Santa’s Gift List Manager 🎅❄️</h1>
+
+  <br>
+  <textarea style="background-color: antiquewhite; border-radius: 5px;" id="output" rows="4" cols="50" placeholder="start adding gifts, you Grinch" disabled></textarea>
+  <br>
+  <input class="button" onclick="emptyList()" id="greeting" class="modern" type="button" value="emptyList"></input>
+  <input class="button" onclick="addGift()" id="greeting" class="modern" type="button" value="addGift"></input>
+  <input class="button" onclick="removeGift()" id="greeting" class="modern" type="button" value="removeGift"></input>
+  <input class="button" onclick="showGifts()" id="greeting" class="modern" type="button" value="showGifts"></input>
+
+</body>
+
+</html>

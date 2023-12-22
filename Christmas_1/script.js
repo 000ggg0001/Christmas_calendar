@@ -86,7 +86,7 @@ class Snowflake {
   }
 }
 
-// Utils
+
 const rand = (min, max) => min + Math.random() * (max - min)
 
 function resize() {

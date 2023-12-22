@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-size: 20px;
+      font-family: sans-serif;
+      color: #722424;
+      text-align: center;
+      background-image: url(/118.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+    .button {
+      background-color: blanchedalmond;
+      border-radius: 25px;
+      font-size: 25px;
+      padding: 10px;
+      color: #722424;
+      font-weight: bold;
+      margin: 25px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <br><br><br><br><br><br><br><br>
+  <h1 style="font-weight: 500; background: rgba(255, 235, 205, 0.61);">🎅 Santa’s Code Breaker 🔏🗝️</h1>
+<p>🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️🗝️</p>
+  <br>
+  <textarea style="background-color: bisque;" id="input" rows="4" cols="50" placeholder="type the text here"></textarea>
+  <textarea style="background-color: bisque;" id="output" rows="4" cols="50" placeholder="text will appear here"></textarea>
+  <br>
+  <input class="button" onclick="encryptMessage()" id="greeting" class="modern" type="button" value="Encrypt"></input>
+  <input class="button" onclick="decryptMessage()" id="greeting" class="modern" type="button" value="Decrypt"></input>
+
+</body>
+
+</html>

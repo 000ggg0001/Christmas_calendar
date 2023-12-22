@@ -12,8 +12,7 @@ const phraseList = [
 ]; 
 
 
-// var finalName = ""
-        
+       
             function generate() {
                var finalName = phraseList[Math.floor( Math.random() * phraseList.length )];
                document.getElementById("uNameInput").value = finalName;
